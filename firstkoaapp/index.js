@@ -7,7 +7,7 @@ const static = require('koa-static');
 
 //creating our router
 const Router = require('koa-router');
-const route = require('koa-router');
+let route = new Router;
 
 //routes
 route.get('/',(ctx, next) => ctx.body = 'Hello World');
